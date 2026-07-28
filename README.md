@@ -39,3 +39,17 @@ It allow primitive data types to be represented as objects. This enables primiti
 Why wrapper classes?<br>
 Java collections (ArrayList, HashMap, etc.) store only objects, not primitives.<br>
 Objects support null values, while primitives do not.<br>
+<hr>
+<b>Garbage Collection</b><br>
+It's an automatic memory management process performed by the JVM.<br> 
+It helps in removing unused and unreachable objects from heap memory, which improves memory utilization and application performance.<br><br>
+<b>Working</b> 
+<ul>
+<li>Object Creation : Objects are created in the heap memory when a program runs.</li>
+<li>Reference Checking: The garbage collector checks whether objects are still referenced by the program.</li>
+<li>Identify Unreachable Objects: Objects without any active reference become unreachable and eligible for garbage collection.</li>
+<li>Memory Cleanup: The JVM removes unreachable objects and frees heap memory automatically.</li>
+<li>Reuse of Memory: Freed memory can now be reused for creating new objects.</li>
+</ul>
+<hr>
+
