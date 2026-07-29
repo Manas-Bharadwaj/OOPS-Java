@@ -52,4 +52,15 @@ It helps in removing unused and unreachable objects from heap memory, which impr
 <li>Reuse of Memory: Freed memory can now be reused for creating new objects.</li>
 </ul>
 <hr>
+<b>Packages</b><br>
+A package in Java is a mechanism to group related classes, interfaces, and sub-packages into a single unit. Packages help organize large applications, avoid naming conflicts, provide access protection, and make code modular and maintainable.<br>
+<ul>
+<li>Avoiding name conflicts (two classes with the same name can exist in different packages)</li>
+<li>Providing access control using public, protected, and default access</li>
+</ul>
+Types<br>
+<b>In-built</b> - comprise a large number of classes that are part of the Java API.<br>
+Eg - java.lang: Contains language support classes(e.g, classes that define primitive data types, math operations)<br>
+     java.io: Contains classes for supporting input/output operations.<br>
+<b>User Defined</b> - packages that are defined by the user.
 
