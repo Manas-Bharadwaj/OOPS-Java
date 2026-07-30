@@ -63,4 +63,12 @@ Types<br>
 Eg - java.lang: Contains language support classes(e.g, classes that define primitive data types, math operations)<br>
      java.io: Contains classes for supporting input/output operations.<br>
 <b>User Defined</b> - packages that are defined by the user.
-
+<hr>
+<b>static keyword</b><br>
+The static keyword in Java is used for memory management and belongs to the class rather than any specific instance. It allows members (variables, methods, blocks, and nested classes) to be shared among all objects of a class.<br>
+<ul>
+<li>Memory is allocated only once when the class is loaded.</li>
+<li>No object creation is needed to access static members; use the class name directly.</li>
+<li>Static methods and variables can’t access non-static members directly.</li>
+<li>Static methods can’t be overridden because they belong to the class, not instances.</li>
+</ul>
