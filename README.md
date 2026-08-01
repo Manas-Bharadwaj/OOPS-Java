@@ -72,3 +72,13 @@ The static keyword in Java is used for memory management and belongs to the clas
 <li>Static methods and variables can’t access non-static members directly.</li>
 <li>Static methods can’t be overridden because they belong to the class, not instances.</li>
 </ul>
+<hr>
+<b>Singleton class</b><br>
+It ensures that a class has only one instance throughout the application and provides a global access point to it.<br>
+It is mainly used when a single shared object is required, such as database connections, logging, or configuration settings<br><br>
+To create singleton class, must follow 3 rules - <br>
+<ul>
+<li>Private Constructor: Prevents other classes from instantiating the class using the new keyword.</li>
+<li>Private Static Variable: Holds the only instance of the class.</li>
+<li>Public Static Factory Method: Serves as the global access point to retrieve the single instance.</li>
+</ul><br>
