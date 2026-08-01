@@ -82,3 +82,4 @@ To create singleton class, must follow 3 rules - <br>
 <li>Private Static Variable: Holds the only instance of the class.</li>
 <li>Public Static Factory Method: Serves as the global access point to retrieve the single instance.</li>
 </ul><br>
+<hr>
