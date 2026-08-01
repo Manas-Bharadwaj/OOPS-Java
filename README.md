@@ -63,4 +63,23 @@ Types<br>
 Eg - java.lang: Contains language support classes(e.g, classes that define primitive data types, math operations)<br>
      java.io: Contains classes for supporting input/output operations.<br>
 <b>User Defined</b> - packages that are defined by the user.
-
+<hr>
+<b>static keyword</b><br>
+The static keyword in Java is used for memory management and belongs to the class rather than any specific instance. It allows members (variables, methods, blocks, and nested classes) to be shared among all objects of a class.<br>
+<ul>
+<li>Memory is allocated only once when the class is loaded.</li>
+<li>No object creation is needed to access static members; use the class name directly.</li>
+<li>Static methods and variables can’t access non-static members directly.</li>
+<li>Static methods can’t be overridden because they belong to the class, not instances.</li>
+</ul>
+<hr>
+<b>Singleton class</b><br>
+It ensures that a class has only one instance throughout the application and provides a global access point to it.<br>
+It is mainly used when a single shared object is required, such as database connections, logging, or configuration settings<br><br>
+To create singleton class, must follow 3 rules - <br>
+<ul>
+<li>Private Constructor: Prevents other classes from instantiating the class using the new keyword.</li>
+<li>Private Static Variable: Holds the only instance of the class.</li>
+<li>Public Static Factory Method: Serves as the global access point to retrieve the single instance.</li>
+</ul><br>
+<hr>
