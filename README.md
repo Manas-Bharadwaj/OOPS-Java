@@ -83,3 +83,63 @@ To create singleton class, must follow 3 rules - <br>
 <li>Public Static Factory Method: Serves as the global access point to retrieve the single instance.</li>
 </ul><br>
 <hr>
+<b>Principles of OOPS</b><br>
+<b>---------------------INHERITANCE------------------------</b><br>
+OOPS concept that allows a class to acquire properties and behaviors from another class.<br>
+It helps in creating a new class from an existing class, promoting code reusability and better organization.<br>
+<ul>
+<li>A subclass can reuse the fields and methods of the parent class without rewriting the code</li>
+<li>A subclass can add its own fields and methods or modify existing ones to extend functionality.</li>
+</ul><br>
+<b>Types</b><br>
+<ul>
+<li><b>Single Inheritance</b> A sub-class is derived from only one super class. It inherits the properties and behavior of a single-parent class, also known as simple inheritance.</li><br>
+<li><b>Multilevel Inheritance</b> A derived class will be inheriting a base class and as well as the derived class also acts as the base class for other classes.</li><br>
+<li><b>Hierarchical Inheritance</b> more than one subclass is inherited from a single base class. i.e. more than one derived class is created from a single base class. For example, cars and buses both are vehicle</li><br>
+</ul><br>
+<b>---------------------POLYMORPHISM-----------------------</b><br>
+Polymorphism means "many forms"<br>
+It allows a single entity to take multiple forms. It enables the same method or interface to behave differently depending on the object involved.<br>Polymorphism improves code flexibility, reusability, and maintainability.<br>
+Eg: Consider a person who plays different roles in life, like a father, a husband, and an employee.<br><br>
+<b>Types</b><br>
+<ul>
+<li><b>Compile-Time</b> aka static polymorphism, occurs when the method to be executed is determined during compilation. It is primarily achieved through method overloading.<br>
+Method selection occurs at compile time.<br><br>
+<b>Method Overloading</b> allows multiple methods with the same name but different parameter lists(diff "type" order),return type within the same class.<br>
+The compiler chooses the appropriate method based on the arguments passed.<br><br>
+<b>Syntax</b><br>
+<pre><code>
+class class_name{
+    void method_name(param1){}
+    void method_name(param1,param2,.......){}
+}
+</code></pre>
+</li>
+<li><b>Runtime</b> aka dynamic polymorphism, occurs when the method call is resolved during program execution. It is achieved through method overriding.<br>
+Method selection occurs at runtime.<br><br>
+<b>Method Overriding</b> occurs when a subclass provides its own implementation of a method already defined in its superclass. The overridden method is selected based on the actual object created.<br><br>
+<b>Syntax</b><br>
+<pre><code>
+class parent{
+     void method_name(param....){}
+}
+class child extends parent{
+     @Override
+     void method_name(param....){}
+}
+At runtime, the method that gets executed 
+depends on the actual object type, not the reference type.
+</code></pre>
+</li>
+</ul><br>
+<b>---------------------ENCAPSULATION-----------------------</b><br>
+OOPS concept binds data and methods into a single unit, typically a class. It restricts direct access to data by hiding implementation details.<br>
+This ensures controlled interaction with the data through defined methods.<br>
+Achieved using: Private data members, Public getter and setter methods<br><br>
+<b>Key Rules</b><br>
+<ul>
+<li><b>Declare data as private:</b> Hide the class data so it cannot be accessed directly from outside the class</li>
+<li><b>Use getters and setters:</b> Keep variables private and provide public getter and setter methods for controlled access and safe modification, often with validation.</li>
+<li><b>Apply proper access modifiers:</b> Use private for data hiding and public for methods that provide access.</li>
+</ul><br>
+<b>--------------------ABSTRACTION-----------------------</b><br>
