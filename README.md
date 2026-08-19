@@ -143,3 +143,15 @@ Achieved using: Private data members, Public getter and setter methods<br><br>
 <li><b>Apply proper access modifiers:</b> Use private for data hiding and public for methods that provide access.</li>
 </ul><br>
 <b>--------------------ABSTRACTION-----------------------</b><br>
+The process of hiding internal implementation details and showing only essential functionality to the user. It focuses on what an object does rather than how it does it.
+<ul>
+<li>It hides the complex details and shows only essential features.</li>
+<li>Abstract classes may have methods without implementation and must be implemented by subclasses.</li>
+</ul>
+Ways to implement Abstraction - Interface, Abstract classes(Partial Abstraction)<br>
+<pre>Eg - The television remote control is the best example of abstraction. 
+It simplifies the interaction with a TV by hiding all the complex technology.
+We don't need to understand how the TV internally works; 
+we just need to press the button to change the channel or adjust the volume.
+</pre>
+<hr>
