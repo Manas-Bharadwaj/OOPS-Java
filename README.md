@@ -155,3 +155,61 @@ We don't need to understand how the TV internally works;
 we just need to press the button to change the channel or adjust the volume.
 </pre>
 <hr>
+<b>Access Control</b><br>
+It can be achieved through access modifiers like public, private, protected, no modifier(default)<br>
+They are used to control the visibility and accessibility of classes, methods, and variables.<br>
+They help enforce encapsulation by restricting access to different parts of a program<br>
+<table>
+  <thead>
+    <tr>
+      <th>Access Modifier</th>
+      <th>Class</th>
+      <th>Package</th>
+      <th>Subclass<br>(same pkg)</th>
+      <th>Subclass<br>(diff pkg)</th>
+      <th>World<br>(diff pkg & not subclass)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>public</strong></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+    </tr>
+    <tr>
+      <td><strong>protected</strong></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">❌</td>
+    </tr>
+    <tr>
+      <td><strong>no modifier(default)</strong></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">❌</td>
+      <td align="center">❌</td>
+    </tr>
+    <tr>
+      <td><strong>private</strong></td>
+      <td align="center">✅</td>
+      <td align="center">❌</td>
+      <td align="center">❌</td>
+      <td align="center">❌</td>
+      <td align="center">❌</td>
+    </tr>
+  </tbody>
+</table><br>
+<b>When to use these modifiers</b><br>
+<ul>
+<li><b>Private:</b> Use this for sensitive data that you do not want to be accessed or modified directly from outside the class. Instead, you should provide public getter and setter methods if you need to allow controlled access.</li>
+<li><b>Default(no modifier):</b> This is used when you want a member to be accessible only within its own package.</li>
+<li><b>Protected:</b> Use this when you want to restrict access to the current package but also allow access to subclasses, even those in different packages.</li>
+<li><b>Public:</b> Use this when you want a member or method to be accessible from anywhere.</li>
+</ul>
+<hr>
